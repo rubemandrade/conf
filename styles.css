@@ -1,33 +1,17 @@
-<style>
-    /* Personalizações adicionais */
-    body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #fff; /* Fundo branco */
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
 
-    .custom-form {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
 
-    .custom-form input, .custom-form button {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+button {
+    cursor: pointer;
+}
 
-    .custom-form button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .custom-form button:hover {
-        background-color: #0056b3;
-    }
-</style>
