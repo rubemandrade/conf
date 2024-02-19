@@ -2,54 +2,20 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        body {
-            background-color: #ffffff;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        main, footer {
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-    <title>Inscrição para Conferência Cristã</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para Conferência</title>
+    <link rel="stylesheet" href="style.css"> <!-- Supondo que o CSS esteja em um arquivo chamado style.css -->
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Conferência Cristã 2024</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Programação</a></li>
-            <li><a href="#" role="button">Contato</a></li>
-        </ul>
-    </nav>
-    <main class="container">
-        <h2>Bem-vindo à Conferência Cristã 2024</h2>
-        <p>Uma jornada de fé, aprendizado e comunhão.</p>
-        <img src="https://source.unsplash.com/random/800x600?church,family,group,bible" alt="Vida da Igreja">
-        <h3>Formulário de Inscrição</h3>
-        <p>Inscreva-se ou adicione participantes (até 30 pessoas).</p>
-        <form id="registrationForm">
-            <input type="text" id="name" name="name" placeholder="Nome Completo" aria-label="Nome Completo" required>
-            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required>
-            <input type="number" id="participants" name="participants" placeholder="Número de Participantes" aria-label="Número de Participantes" required min="1" max="30" step="1">
-            <button type="submit" onclick="event.preventDefault()">Enviar Inscrição</button>
-        </form>
-    </main>
-    <footer>
-        <small>
-            <a href="#">Política de Privacidade</a> • <a href="#">Termos de Uso</a>
-        </small>
-    </footer>
+    <div id="registrationForm">
+        <input type="text" id="responsibleName" placeholder="Nome do responsável pela inscrição">
+        <input type="text" id="locality" placeholder="Localidade">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="text" id="whatsapp" placeholder="WhatsApp">
+        <button onclick="startRegistration()">Iniciar inscrição</button>
+    </div>
+    <div id="participantsForm" style="display:none;"></div>
+    <script src="script.js"></script> <!-- Supondo que o JavaScript esteja em um arquivo chamado script.js -->
 </body>
 </html>
+
